@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Pavel Dmitriev](https://up.htmlacademy.ru/htmlcss/27/user/431607).
-* Наставник: `Неизвестно`.
+* Наставник: [Yury Zaytsev](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
