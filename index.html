@@ -14,6 +14,10 @@
       </a>
     </div>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+      <button class="search-button" type="submit">
+        <span class="visually-hidden">Поиск</span>
+      </button>
     </form>
     <a class="header-bookmarks main-navigation-link" href="#">Закладки: 0</a>
     <a class="header-basket main-navigation-link" href="#">Корзина: 0</a>
@@ -389,6 +393,32 @@
         Разработано
         <a class="contacts-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
+    </section>
+    <section class="modal">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-form-info">
+          <label class="label-name" for="contact-name">Ваше имя:</label>
+          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-form-info">
+          <label class="label-email" for="contact-email">Ваш e-mail:</label>
+          <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="contact-form-info">
+          <label class="label-text" for="contact-text">Текст письма:</label>
+          <textarea id="contact-text" name="textarea" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button send-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+    <section class="modal-map-popup">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/map.jpg" width="940" height="446" alt="Карта проезда">
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </footer>
 </body>

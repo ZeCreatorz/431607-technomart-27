@@ -12,6 +12,10 @@
       <img src="img/header-logo.svg" width="108" height="18" alt="Логотип компании «Техномарт»">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск по сайту">
+      <button class="search-button" type="submit">
+        <span class="visually-hidden">Поиск</span>
+      </button>
     </form>
     <a class="header-bookmarks" href="#">Закладки: 0</a>
     <a class="header-basket" href="#">Корзина: 10</a>
@@ -391,6 +395,15 @@
       </p>
     </section>
   </footer>
+  <section class="modal-cart-popup">
+    <h2 class="visually-hidden">Добавление товара</h2>
+    <p>Товар добавлен в корзину!</p>
+    <a class="button modal-cart-ordering" href="#">оформить заказ</a>
+    <a class="button modal-cart-continue" href="#">продолжить покупки</a>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 </body>
 
 </html>
