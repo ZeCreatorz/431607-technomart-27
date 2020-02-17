@@ -4,7 +4,7 @@
   font-family: "Cuprum";
 
   src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
-    url("../fonts/cuprum.woff") format("woff");
+  url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "Cuprum";
 
   src: local("Cuprum"), url("../fonts/cuprumbold.woff2") format("woff2"),
-    url("../fonts/cuprumbold.woff") format("woff");
+  url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-family: "Ptsans";
 
   src: local("Ptsans"), url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-family: "Ptsans";
 
   src: local("Ptsans"), url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+  url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -44,6 +44,7 @@ body {
   line-height: 17px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -73,7 +74,7 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .container {
@@ -84,6 +85,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin-bottom: 59px;
+
   background-color: #f4f7f9;
 }
 
@@ -98,9 +100,9 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 220px;
   height: 42px;
-  box-shadow: 0 5px 0 0 #b52933;
 
   background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .logo-wrapper:hover {
@@ -141,6 +143,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a {
   display: block;
+
   color: #ffffff;
 }
 
@@ -150,6 +153,7 @@ input[type="radio"].visually-hidden {
 
 .header-bookmarks {
   position: relative;
+
   width: 105px;
 }
 
@@ -187,7 +191,9 @@ input[type="radio"].visually-hidden {
 
 .header-basket {
   position: relative;
+
   width: 100px;
+
   line-height: 18px;
 }
 
@@ -230,7 +236,9 @@ input[type="radio"].visually-hidden {
 .header-submit-order {
   width: 150px;
   padding: 12px 0;
+
   line-height: 18px;
+
   background-color: #63a63e;
 }
 
@@ -244,7 +252,9 @@ input[type="radio"].visually-hidden {
 
 .search-form {
   position: relative;
+
   padding-left: 13px;
+
   background-color: #293449;
 }
 
@@ -321,10 +331,10 @@ input[type="radio"].visually-hidden {
 .login-link {
   box-sizing: border-box;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
 
   background-color: transparent;
@@ -333,10 +343,10 @@ input[type="radio"].visually-hidden {
 .register-link {
   box-sizing: border-box;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -451,6 +461,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 59px;
   padding-bottom: 60px;
+
   line-height: 17px;
   color: #ffffff;
 }
@@ -471,18 +482,20 @@ input[type="radio"].visually-hidden {
 }
 
 .store-navigation a[href]:active {
-  background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
   box-shadow: inset 0 -5px 0 0 #1d2739;
 }
 
 .store-navigation a {
   display: block;
   padding: 20px 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
+  font-weight: 400;
   font-size: 17px;
   line-height: 17px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -503,9 +516,10 @@ input[type="radio"].visually-hidden {
 .advertising-button {
   display: inline-block;
   box-sizing: border-box;
+  min-width: 135px;
+  margin-left: 24px;
   padding: 12px;
 
-  min-width: 135px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -513,7 +527,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-left: 24px;
 
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
@@ -598,9 +611,10 @@ input[type="radio"].visually-hidden {
 
 .advertising-title {
   margin: 0;
-  margin-left: 24px;
   margin-bottom: 12px;
+  margin-left: 24px;
   padding-top: 23px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -619,6 +633,7 @@ input[type="radio"].visually-hidden {
 
 .advertising-second-item {
   position: relative;
+
   width: 300px;
   height: 123px;
   margin: 0;
@@ -723,11 +738,12 @@ input[type="radio"].visually-hidden {
 
 .popular-products-title {
   margin: 0;
+
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
   color: #32425c;
-  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .popular-products-title-wrapper {
@@ -737,14 +753,16 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 20px;
   padding: 26px 24px 25px 30px;
+
   background-color: #f9f5f0;
 }
 
 .popular-products-link h2 {
   margin: 0;
+
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .popular-products-link {
@@ -771,37 +789,38 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-item {
   position: relative;
+
   display: inline-block;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
   text-align: center;
 
   border: 1px solid #eaeaeaea;
 }
 
 .product-title {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-products-item .catalog-popup {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 
   width: 218px;
   height: 88px;
   padding: 40px 0;
 
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10;
 }
 
 .catalog-products-item .catalog-popup .button-buy,
@@ -812,22 +831,23 @@ input[type="radio"].visually-hidden {
   margin-bottom: 7px;
   padding: 7px 0;
 
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
-
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: normal;
-  font-family: "Cuprum", Arial, sans-serif;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .catalog-products-item .catalog-popup .button-bookmarks {
   color: #32425c;
+
   background: #ffffff;
   border-bottom-color: #63a63e;
 }
@@ -851,9 +871,9 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-item .product-title {
   min-height: 40px;
-  padding: 0 25px;
   margin-top: 10px;
   margin-bottom: 15px;
+  padding: 0 25px;
 }
 .catalog-products-item .old-price {
   min-height: 20px;
@@ -865,34 +885,35 @@ input[type="radio"].visually-hidden {
 }
 
 .old-price {
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 700;
 }
 
 .catalog-products-item .current-price {
   position: relative;
+
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
   padding: 10px 30px;
 
   color: #ffffff;
+
   background: #ee3643;
   border-radius: 3px;
 }
 
 .current-price {
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-weight: 700;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-products-item .current-price:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: -20px;
@@ -908,13 +929,13 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -1px;
   right: -1px;
+  z-index: 20;
 
   width: 60px;
   height: 60px;
+  overflow: hidden;
 
   text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
 }
 
 .catalog-products-item .flag-new {
@@ -997,6 +1018,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   margin-bottom: 78px;
+
   background-color: #f5f8fa;
 }
 
@@ -1015,16 +1037,15 @@ input[type="radio"].visually-hidden {
 }
 
 .services-button {
-  box-sizing: border-box;
   display: inline-block;
+  box-sizing: border-box;
+  min-width: 240px;
   padding: 21px 140px 21px 22px;
 
-  min-width: 240px;
-
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
@@ -1041,28 +1062,30 @@ input[type="radio"].visually-hidden {
 
 .services h2 {
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .services p {
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 
 .services-item h3 {
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -1076,8 +1099,9 @@ input[type="radio"].visually-hidden {
 }
 
 .credit-request-button {
-  margin: 0;
   min-width: 195px;
+  margin: 0;
+
   background-color: #ff5357;
 }
 
@@ -1112,20 +1136,21 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 27px;
 
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .about-text {
   margin: 0 0 27px;
-  font-family: "PT Sans", Arial, sans-serif;
+
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 
@@ -1147,10 +1172,10 @@ input[type="radio"].visually-hidden {
 .about-item-text {
   margin: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
 }
 
@@ -1180,10 +1205,11 @@ input[type="radio"].visually-hidden {
 
 .contacts-text {
   margin: 0 0 33px;
-  font-family: "PT Sans", Arial, sans-serif;
+
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 
@@ -1243,10 +1269,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-navigation a {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #f1f5f7;
 }
 
@@ -1270,10 +1296,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-secondary-navigation a {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffd180;
 }
 
@@ -1295,18 +1321,18 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts p {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #f3f7f9;
 }
 
 .footer-contacts a {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #f3f7f9;
 }
 
@@ -1322,10 +1348,10 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -1365,26 +1391,26 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-email {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
 .contacts-developer {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
 .contacts-link {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffd180;
 }
 .contacts-link:hover {
@@ -1456,19 +1482,19 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 10;
 
+  display: none;
   width: 620px;
   margin-top: -150px;
   margin-left: -480px;
-  padding-left: 80px;
-  padding-right: 80px;
   padding-top: 49px;
+  padding-right: 80px;
   padding-bottom: 37px;
+  padding-left: 80px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -1539,10 +1565,10 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding: 13px 15px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #a9a9a9;
 
   background-color: #ffffff;
@@ -1571,10 +1597,10 @@ input[type="radio"].visually-hidden {
 .modal label {
   display: block;
 
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .form-info-wrapper {
@@ -1615,10 +1641,10 @@ input[type="radio"].visually-hidden {
 .send-button {
   min-width: 460px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -1645,8 +1671,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-navigation-item:first-of-type {
   position: relative;
+
   box-sizing: border-box;
   padding: 12px 69px 9px 47px;
+
   background-color: #ffffff;
 }
 
@@ -1655,27 +1683,26 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-name {
-  font-family: "Cuprum", Arial, sans-serif;
-
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
 }
 
 .catalog-orders {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
 }
 
 .catalog-profile {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
 }
 
@@ -1694,10 +1721,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   padding: 27px 30px;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
   text-transform: uppercase;
 
@@ -1705,10 +1732,10 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-list a {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1722,10 +1749,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 17px;
   padding: 12px 19px;
 
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -1735,10 +1762,10 @@ input[type="radio"].visually-hidden {
 .legend-price {
   margin-bottom: 19px;
 
+  font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1791,7 +1818,7 @@ input[type="radio"].visually-hidden {
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
@@ -1824,11 +1851,10 @@ input[type="radio"].visually-hidden {
   width: 60px;
   padding: 8px 10px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  font-weight: 400;
-
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
 
   background: #f7f3ec;
@@ -1891,10 +1917,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 17px;
   padding-left: 36px;
 
+  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1978,10 +2004,10 @@ input[type="radio"].visually-hidden {
 .filter-button {
   min-width: 140px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -2005,6 +2031,7 @@ input[type="radio"].visually-hidden {
 
 .sort h2 {
   margin: 0;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -2021,10 +2048,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-item {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .sort-link {
@@ -2101,8 +2128,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   margin: 0 0 21px;
+  padding: 0;
+
   background-color: #f7f3ec;
 }
 
@@ -2125,10 +2153,10 @@ input[type="radio"].visually-hidden {
   min-width: 38px;
   margin-right: 10px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #000000;
 
@@ -2139,6 +2167,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   display: flex;
+
   list-style: none;
 }
 
