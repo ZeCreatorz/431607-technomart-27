@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link-wrapper .catalog-basket {
-  padding: 12px 26px 12px 50px;
+  padding: 12px 25px 12px 48px;
 }
 
 .link-wrapper .header-submit-order {
@@ -268,16 +268,17 @@ input[type="radio"].visually-hidden {
   background-color: #212a3a;
 }
 
-.search-form svg:hover {
+.search-field:focus {
+  background-color: #ffffff;
+}
+
+.search-form:hover svg {
   opacity: 1;
 }
 
-.search-form svg:active path {
-  fill: red;
-}
-
-.search-field:focus {
-  background-color: #ffffff;
+.search-field:focus ~ svg {
+  opacity: 1;
+  fill: #ee3643;
 }
 
 .search-form {
@@ -288,6 +289,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 12px;
   left: 17px;
+  fill: #ffffff;
 
   width: 17px;
   height: 17px;
@@ -305,7 +307,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
@@ -375,20 +376,20 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link {
-  box-sizing: border-box;
-
-  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: #000000;
+  padding-left: 48px;
+  padding-right: 27px;
+  padding-top: 10px;
+  padding-bottom: 11px;
 
-  background-color: transparent;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.user-navigation-item svg {
+.login-link svg {
   position: absolute;
-  top: 14px;
+  top: 0;
   left: 15px;
 
   width: 20px;
@@ -396,12 +397,13 @@ input[type="radio"].visually-hidden {
 }
 
 .register-link {
-  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 9px;
 
-  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
-  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -426,21 +428,73 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
+.user-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-user-navigation-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 281px;
+
   margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 
   list-style: none;
+}
+
+.catalog-navigation-item {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.user-second-list {
+  display: flex;
+
+  margin: 0;
+  margin-left: 17px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-second-item {
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.user-second-item:first-of-type {
+  position: relative;
+  padding-right: 35px;
+}
+
+.user-second-item:first-of-type::after {
+  content: "";
+  position: absolute;
+
+  top: 7px;
+  right: 14px;
+
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
 }
 
 .user-navigation-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 283px;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -448,11 +502,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-item {
   position: relative;
-
-  padding-top: 12px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 11px;
+  margin: 0;
 
   text-align: center;
 
@@ -463,17 +513,16 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
-.login-link svg:hover path {
+.login-link:hover svg path {
   fill: #212a3a;
 }
 
-.login-link svg:active {
+.login-link:active svg {
   opacity: 0.3;
 }
 
 .user-navigation-item:not(:last-of-type) {
   margin-right: 10px;
-  padding: 12px 27px 11px 48px;
 }
 
 .register-link:hover {
@@ -507,7 +556,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-around;
 
-  width: 940px;
   margin: 0;
   padding: 0;
 
@@ -532,10 +580,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 21px;
   padding-left: 30px;
   padding-right: 30px;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 17px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffffff;
 }
 
@@ -559,7 +604,6 @@ input[type="radio"].visually-hidden {
 
   padding: 10px 20px;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
@@ -771,7 +815,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -896,10 +939,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 7px;
   padding: 7px 0;
 
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -943,6 +984,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-item:hover .catalog-popup {
   display: block;
+  background-color: #ffffff;
 }
 
 .catalog-products-item .image {
@@ -1077,20 +1119,21 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 145px;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
-  vertical-align: bottom;
 }
 
 .popular-manufacturers-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   width: 220px;
+  height: 145px;
+
+  margin: 0;
   margin-bottom: 20px;
   padding: 0;
 
@@ -1099,6 +1142,15 @@ input[type="radio"].visually-hidden {
 
 .popular-manufacturers-item img {
   display: block;
+}
+
+.popular-manufacturers-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-manufacturers-item:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 .services {
@@ -1145,19 +1197,21 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.container .container-services {
+  width: 1200px;
+}
+
 .services h2 {
   margin: 0;
 
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .services p {
-  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1170,7 +1224,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #32425c;
   text-transform: uppercase;
 }
@@ -1224,7 +1278,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #000000;
   text-transform: uppercase;
 }
@@ -1232,7 +1286,6 @@ input[type="radio"].visually-hidden {
 .about-text {
   margin: 0 0 27px;
 
-  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1257,7 +1310,6 @@ input[type="radio"].visually-hidden {
 .about-item-text {
   margin: 0;
 
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1291,7 +1343,6 @@ input[type="radio"].visually-hidden {
 .contacts-text {
   margin: 0 0 33px;
 
-  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1354,10 +1405,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-navigation a {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #f1f5f7;
 }
 
@@ -1381,10 +1431,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-secondary-navigation a {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffd180;
 }
 
@@ -1406,18 +1455,16 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #f3f7f9;
 }
 
 .footer-contacts a {
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #f3f7f9;
 }
 
@@ -1433,10 +1480,9 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffffff;
 }
 
@@ -1476,26 +1522,23 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-email {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffffff;
 }
 
 .contacts-developer {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffffff;
 }
 
 .contacts-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #ffd180;
 }
 .contacts-link:hover {
@@ -1745,29 +1788,59 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.catalog-user-navigation-list {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 299px;
-  margin: 0;
-
-  list-style: none;
-}
-
-.catalog-navigation-item:first-of-type {
+.catalog-name {
   position: relative;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  padding-left: 47px;
+  padding-right: 68px;
+  font-size: 21px;
+  line-height: 21px;
 
-  box-sizing: border-box;
-  padding: 12px 69px 9px 47px;
-
+  color: #000000;
   background-color: #ffffff;
 }
 
-.catalog-navigation-item svg:hover path {
+.catalog-name svg {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+}
+
+.myaccount-logout {
+  position: relative;
+}
+
+.myaccount-logout svg {
+  position: absolute;
+
+  top: -10px;
+  right: 10px;
+
+  width: 20px;
+  height: 17px;
+}
+
+.myaccount-logout svg:hover path {
   fill: #212a3a;
 }
 
-.catalog-navigation-item svg:active path {
+.myaccount-logout svg:active path {
+  opacity: 0.3;
+}
+
+.catalog-name:hover svg path {
+  fill: #212a3a;
+}
+
+.catalog-name svg:active path {
+  opacity: 0.3;
+}
+
+.catalog-name:active {
   opacity: 0.3;
 }
 
@@ -1775,23 +1848,10 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.catalog-name {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 21px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: #000000;
-}
-
-.catalog-name:active {
-  opacity: 0.3;
-}
-
 .catalog-orders {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+
   color: #32425c;
 }
 
@@ -1804,10 +1864,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-profile {
-  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
 }
 
@@ -2172,10 +2230,25 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   color: rgba(000, 000, 000, 0.3);
+
   text-transform: uppercase;
 }
 
-.sort-link:active,
+.sort-link {
+  border-bottom: 1px solid #ee3643;
+  border-bottom-style: dotted;
+}
+
+.sort-item .current {
+  border-bottom: none;
+}
+
+.sort-item .sort-link:active,
+.sort-item .sort-link:focus {
+  color: #ee3643;
+  border: none;
+}
+
 .sort-item .current {
   color: #ee3643;
 
@@ -2184,7 +2257,8 @@ input[type="radio"].visually-hidden {
 
 .sort-link:hover,
 .sort-link:focus {
-  color: rgba(000, 000, 000, 0.6);
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
 }
 
 .sort-arrow {
