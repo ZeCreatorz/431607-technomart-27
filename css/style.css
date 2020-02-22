@@ -270,6 +270,7 @@ input[type="radio"].visually-hidden {
 
 .search-field:focus {
   background-color: #ffffff;
+  outline: none;
 }
 
 .search-form:hover svg {
@@ -485,7 +486,7 @@ input[type="radio"].visually-hidden {
   right: 14px;
 
   width: 4px;
-  height: 5px;
+  height: 4px;
   border-radius: 50%;
   background-color: #32425c;
 }
@@ -1454,6 +1455,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.footer-contacts {
+  font-style: normal;
+}
+
 .footer-contacts p {
   font-size: 18px;
   line-height: 24px;
@@ -1793,7 +1798,7 @@ input[type="radio"].visually-hidden {
   padding-top: 12px;
   padding-bottom: 9px;
   padding-left: 47px;
-  padding-right: 68px;
+  padding-right: 8px;
   font-size: 21px;
   line-height: 21px;
 
@@ -1811,24 +1816,36 @@ input[type="radio"].visually-hidden {
 }
 
 .myaccount-logout {
+  display: block;
   position: relative;
+
+  width: 60px;
+  height: 45px;
+  background-color: #ffffff;
 }
 
 .myaccount-logout svg {
   position: absolute;
-
-  top: -10px;
-  right: 10px;
-
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   width: 20px;
   height: 17px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
-.myaccount-logout svg:hover path {
+.myaccount-logout:hover svg path {
   fill: #212a3a;
 }
 
 .myaccount-logout svg:active path {
+  opacity: 0.3;
+}
+
+.myaccount-logout:active {
   opacity: 0.3;
 }
 
