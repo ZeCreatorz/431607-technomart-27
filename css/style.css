@@ -367,7 +367,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+
   font-style: normal;
   text-align: center;
   color: #32425c;
@@ -897,9 +897,6 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
   text-align: center;
 
   border: 1px solid #eaeaeaea;
@@ -2031,7 +2028,6 @@ input[type="radio"].visually-hidden {
   width: 60px;
   padding: 8px 10px;
 
-  font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2097,7 +2093,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 17px;
   padding-left: 36px;
 
-  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2184,7 +2179,6 @@ input[type="radio"].visually-hidden {
 .filter-button {
   min-width: 140px;
 
-  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2228,7 +2222,6 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-item {
-  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2349,7 +2342,6 @@ input[type="radio"].visually-hidden {
   min-width: 38px;
   margin-right: 10px;
 
-  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
