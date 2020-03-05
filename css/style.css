@@ -590,6 +590,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -777,9 +778,31 @@ input[type="radio"].visually-hidden {
   background-color: #8ed78f;
 }
 
-.slider-wrapper {
+.slider-indicator {
+  position: absolute;
+  bottom: 36px;
+  left: 31.5%;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  left: 31.5%;
+}
+
+.prevarrow {
+  position: absolute;
+  right: 255px;
+}
+
+.nextarrow {
+  position: absolute;
+  left: 280px;
+}
+
+.main-slider {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -794,23 +817,39 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item {
+  width: 620px;
+  height: 266px;
   margin: 0;
   padding: 0;
 }
 
+.slider-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slider-item:nth-child(2) {
+  display: none;
+}
+
 .slider-title {
   margin: 0 auto;
+  margin-left: 24px;
   padding: 22px 0 0;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .slider-text {
   margin: 0;
+  margin-left: 25px;
   padding: 0;
 
   font-size: 18px;
@@ -819,22 +858,46 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: solid 5px #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-indicator-button {
+  margin-right: 8px;
+}
+
+.slider-button-current::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  border-radius: 50%;
+  background-color: #ee3643;
+}
+
+.slider-main-button {
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
   min-width: 195px;
 }
 
-.slider-button:hover {
+.slider-main-button:hover {
   background-color: #ca2c37;
 }
 
-.slider-button:active {
+.slider-main-button:active {
   background-color: #ba2732;
 }
 
 .slider-arrows-list {
-  list-style: none;
-}
-
-.slider-button-list {
   list-style: none;
 }
 
@@ -880,10 +943,19 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
+.catalog-products-item:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+.catalog-product {
+  width: 700px;
+}
+
 .catalog-products-list {
   display: flex;
-  justify-content: space-between;
-  margin: 21px 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -1156,6 +1228,7 @@ input[type="radio"].visually-hidden {
 
 .services-toggles-list {
   margin: 0;
+  margin-right: 80px;
   padding: 0;
 
   list-style: none;
@@ -1172,38 +1245,55 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   box-sizing: border-box;
   min-width: 240px;
-  padding: 21px 140px 21px 22px;
+  padding: 20px 140px 15px 23px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
 
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-
   background-color: #32425c;
-  border: none;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  outline: none;
 }
 
-.delivery-button-current {
-  color: #32425c;
+.services-button:hover {
+  background-color: #293449;
+}
 
+.services-button:active,
+.services-button:focus {
+  color: #32425c;
   background-color: #ffffff;
 }
 
-.container .container-services {
-  width: 1200px;
+.delivery-button-current {
+  border: none;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.delivery-button-current:hover {
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 .services h2 {
   margin: 0;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-title {
+  padding-top: 68px;
 }
 
 .services p {
@@ -1213,8 +1303,28 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.services-text {
+  margin: 0;
+  margin-bottom: 66px;
+}
+
+.delivery-text {
+  margin: 0;
+  padding: 0;
+}
+
+.services-item:nth-child(2) {
+  display: none;
+}
+
+.services-item:nth-child(3) {
+  display: none;
+}
+
 .services-item h3 {
   margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 36px;
@@ -1247,9 +1357,15 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-.about {
+.services-wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  padding-bottom: 85px;
+}
+
+.about {
+  display: flex;
   margin-bottom: 86px;
 }
 
@@ -1279,8 +1395,9 @@ input[type="radio"].visually-hidden {
 }
 
 .about-text {
-  margin: 0 0 27px;
-
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1336,7 +1453,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-text {
-  margin: 0 0 33px;
+  margin: 0 0 48px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1387,6 +1504,7 @@ input[type="radio"].visually-hidden {
 .main-footer {
   background-color: #32425c;
 }
+
 .footer-navigation .container {
   display: flex;
   justify-content: space-between;
@@ -1454,10 +1572,15 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts p {
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
 
   color: #f3f7f9;
+}
+
+.footer-contacts-tel {
+  font-style: normal;
 }
 
 .footer-contacts a {
@@ -2210,6 +2333,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -2367,15 +2491,25 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   border: none;
   cursor: default;
-
-  pointer-events: none;
 }
 
 .pagination-link[href]:active,
 .pagination-link[href]:focus {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+  cursor: default;
+}
+
+.pagination-link[href]:hover {
   background-color: #ffffff;
-  border: 1px solid #ee3643;
-  border-radius: 3px;
+  border: solid 1px #bdc6ca;
+}
+
+.pagination-link[href]:active {
+  border: solid 1px #ee3643;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .product-description {
