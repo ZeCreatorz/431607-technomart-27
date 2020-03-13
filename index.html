@@ -164,7 +164,9 @@
               <img src="img/Perforatorbfg9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <h3 class="product-title">
-              Перфоратор BOSCH BFG 9000
+              <a class="product-title-link" href="#">
+                Перфоратор BOSCH BFG 9000
+              </a>
             </h3>
             <del class="old-price">32500р.</del>
             <p class="current-price">25500р.</p>
@@ -182,7 +184,9 @@
               <img src="img/Perforatorbfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </div>
             <h3 class="product-title">
-              Перфоратор BOSCH BFG 3000
+              <a class="product-title-link" href="#">
+                Перфоратор BOSCH BFG 3000
+              </a>
             </h3>
             <del class="old-price">22500р.</del>
             <p class="current-price">15500р.</p>
@@ -200,7 +204,9 @@
               <img src="img/Perforatorbfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <h3 class="product-title">
-              Перфоратор BOSCH BFG 6000
+              <a class="product-title-link" href="#">
+                Перфоратор BOSCH BFG 6000
+              </a>
             </h3>
             <del class="old-price">30500р.</del>
             <p class="current-price">25500р.</p>
@@ -219,7 +225,9 @@
               <img src="img/Perforatorbfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
             <h3 class="product-title">
-              Перфоратор BOSCH BFG 2000
+              <a class="product-title-link" href="#">
+                Перфоратор BOSCH BFG 2000
+              </a>
             </h3>
             <del class="old-price old-price-no">0</del>
             <p class="current-price">12500р.</p>
@@ -455,24 +463,24 @@
         </div>
       </div>
     </section>
-    <section class="modal">
+    <section class="modal modal-show modal-error">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-info-wrapper">
-          <p class="contact-form-info">
-            <label class="label-name" for="contact-name">Ваше имя:</label>
-            <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="contact-form-info">
-            <label class="label-email" for="contact-email">Ваш e-mail:</label>
-            <input id="contact-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-        </div>
+        <p class="contact-form-info contact-form-name">
+          <label class="label-name" for="contact-name">Ваше имя:</label>
+          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-form-info contact-form-email">
+          <label class="label-email" for="contact-email">Ваш e-mail:</label>
+          <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+        </p>
         <p class="contact-form-info">
           <label class="label-text" for="contact-text">Текст письма:</label>
           <textarea id="contact-text" name="textarea" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button send-button" type="submit">Отправить</button>
+        <div class="send-button-wrapper">
+          <button class="button send-button" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>

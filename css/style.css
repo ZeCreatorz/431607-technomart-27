@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link-wrapper .header-submit-order {
-  padding: 12px 22px 12px 20px;
+  padding: 12px 21px 12px 20px;
 }
 
 .user-navigation {
@@ -252,7 +252,7 @@ input[type="radio"].visually-hidden {
   height: 42px;
   border: none;
   background-color: #293449;
-  padding-left: 50px;
+  padding-left: 49px;
   box-sizing: border-box;
 }
 
@@ -1025,6 +1025,10 @@ input[type="radio"].visually-hidden {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.product-title-link {
+  color: #000000;
+}
+
 .catalog-products-item .catalog-popup {
   position: absolute;
   top: 0;
@@ -1447,11 +1451,6 @@ input[type="radio"].visually-hidden {
 
 .services-button:hover {
   background-color: #293449;
-}
-
-.services-button:focus {
-  color: #32425c;
-  background-color: #ffffff;
 }
 
 .delivery-button-current {
@@ -1919,7 +1918,6 @@ input[type="radio"].visually-hidden {
 
 .modal p {
   margin: 0;
-  margin-bottom: 35px;
 }
 
 .modal-button {
@@ -1928,8 +1926,8 @@ input[type="radio"].visually-hidden {
 
 .contact-form {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 @keyframes bounce {
@@ -1977,26 +1975,20 @@ input[type="radio"].visually-hidden {
   top: 50%;
   left: 50%;
   z-index: 10;
-  display: none;
 
   width: 620px;
   margin-top: -150px;
-  margin-left: -480px;
-  padding-top: 49px;
-  padding-right: 80px;
-  padding-bottom: 37px;
-  padding-left: 80px;
+  margin-left: -280px;
 
   background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 .modal-close {
   position: absolute;
-  top: 80px;
-  right: 90px;
+  top: 15px;
+  right: 20px;
 
-  display: none;
   width: 21px;
   height: 21px;
 
@@ -2017,7 +2009,7 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 3px;
 
-  background-color: #fecccd;
+  background-color: #ee3643;
 }
 
 .modal-close::before {
@@ -2030,18 +2022,16 @@ input[type="radio"].visually-hidden {
 
 .modal-close:hover::before,
 .modal-close:hover::after {
-  background-color: rgba(251, 86, 90, 1);
+  background-color: #ca2c37;
 }
 
 .modal-close:active::before,
 .modal-close:active::after {
-  background-color: rgba(251, 86, 90, 1);
-  opacity: 0.2;
+  background-color: #ba2732;
 }
 
 .modal-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
@@ -2054,7 +2044,7 @@ input[type="radio"].visually-hidden {
 .modal textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 13px 15px;
+  padding: 8px 15px;
 
   font-weight: 400;
   font-size: 13px;
@@ -2070,14 +2060,14 @@ input[type="radio"].visually-hidden {
 
 .modal textarea {
   max-width: 460px;
-  min-height: 130px;
-  padding: 10px 14px;
+  min-height: 114px;
+  padding: 8px 14px;
 }
 
 .label-name,
 .label-email,
 .label-text {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .contact-form input[type="email"]:invalid,
@@ -2092,19 +2082,27 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.form-info-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 460px;
+.contact-form-name {
+  width: 220px;
+  padding-right: 20px;
+}
+
+.contact-form-email {
+  width: 220px;
 }
 
 .contact-form-info {
-  width: 220px;
   min-height: 38px;
+}
+
+.contact-form-info:not(:last-of-type) {
+  margin-top: 48px;
+  margin-bottom: 20px;
 }
 
 .contact-form-info:last-of-type {
   width: 460px;
+  margin-bottom: 37px;
 }
 
 .contact-form input:hover {
@@ -2116,15 +2114,23 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form input:focus {
-  color: #b7b7b7;
+  color: #999999;
 
-  border-color: #000000;
+  border-color: #ee3643;
 }
 
 .contact-form textarea:focus {
-  color: #b7b7b7;
+  color: #999999;
 
-  border-color: #000000;
+  border-color: #ee3643;
+}
+
+.send-button-wrapper {
+  background-color: #f4f4f4;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .send-button {
@@ -2134,6 +2140,14 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 
   color: #ffffff;
+}
+
+.send-button:hover {
+  background-color: #ca2c37;
+}
+
+.send-button:active {
+  background-color: #ba2732;
 }
 
 .send-button:focus {
@@ -2252,12 +2266,40 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-list {
   display: flex;
   justify-content: space-between;
-  width: 380px;
+  width: 355px;
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
 
   list-style: none;
+}
+
+.breadcrumbs-catalog {
+  position: relative;
+}
+
+.bredcrumbs-index {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:first-of-type) {
+  position: relative;
+}
+
+.breadcrumbs-item::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border: 1px solid #c5c9d1;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+  padding: 4px;
+  top: 5px;
+  left: -30px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
 }
 
 .catalog-title {
@@ -2314,7 +2356,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .filter-price {
-  margin-bottom: 48px;
+  margin-bottom: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .range-filter {
@@ -2437,12 +2481,9 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.filter .filter-price {
-  margin-bottom: 25px;
-}
-
 .filter .filter-manufacturers {
   margin-bottom: 21px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .filter .filter-power {
