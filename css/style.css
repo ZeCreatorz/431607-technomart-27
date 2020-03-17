@@ -4,7 +4,7 @@
   font-family: "Cuprum";
 
   src: local("Cuprum"), url("../fonts/cuprum.woff2") format("woff2"),
-    url("../fonts/cuprum.woff") format("woff");
+  url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "Cuprum";
 
   src: local("Cuprum"), url("../fonts/cuprumbold.woff2") format("woff2"),
-    url("../fonts/cuprumbold.woff") format("woff");
+  url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-family: "PT sans";
 
   src: local("PT sans"), url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-family: "Ptsans";
 
   src: local("Ptsans"), url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+  url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -74,7 +74,7 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .container {
@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 23px;
+  margin-bottom: 59px;
 
   background-color: #f4f7f9;
 }
@@ -193,6 +193,7 @@ input[type="radio"].visually-hidden {
 
 .header-basket {
   position: relative;
+
   line-height: 18px;
 }
 
@@ -234,6 +235,7 @@ input[type="radio"].visually-hidden {
 
 .header-submit-order {
   margin: 0;
+
   line-height: 18px;
 
   background-color: #63a63e;
@@ -248,18 +250,18 @@ input[type="radio"].visually-hidden {
 }
 
 .search-field {
+  box-sizing: border-box;
   width: 270px;
   height: 42px;
-  border: none;
-  background-color: #293449;
   padding-left: 49px;
-  box-sizing: border-box;
+
+  background-color: #293449;
+  border: none;
 }
 
 .search-field::placeholder {
   font-size: 17px;
   line-height: 18px;
-
   color: #ffffff;
 }
 
@@ -278,6 +280,7 @@ input[type="radio"].visually-hidden {
 
 .search-field:focus ~ svg {
   opacity: 1;
+
   fill: #ee3643;
 }
 
@@ -289,26 +292,28 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 12px;
   left: 17px;
-  fill: #ffffff;
 
   width: 17px;
   height: 17px;
+
   opacity: 0.3;
+
+  fill: #ffffff;
 }
 
 .store-information .container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .store-title {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;
   font-style: italic;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   text-align: left;
@@ -339,11 +344,12 @@ input[type="radio"].visually-hidden {
 
 .contacts-tel {
   position: relative;
+
   margin-bottom: 10px;
 
+  font-style: normal;
   font-size: 21px;
   line-height: 21px;
-  font-style: normal;
   color: #ee3643;
 
   border: 3px solid #ffffff;
@@ -357,6 +363,7 @@ input[type="radio"].visually-hidden {
 
   width: 19px;
   height: 19px;
+
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -365,23 +372,23 @@ input[type="radio"].visually-hidden {
 .contacts-address {
   margin: 0;
 
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
-
-  font-style: normal;
   text-align: center;
   color: #32425c;
 }
 
 .login-link {
+  padding-top: 10px;
+  padding-right: 27px;
+  padding-bottom: 11px;
+  padding-left: 48px;
+
   font-size: 21px;
   line-height: 21px;
-  padding-left: 48px;
-  padding-right: 27px;
-  padding-top: 10px;
-  padding-bottom: 11px;
-
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -395,10 +402,10 @@ input[type="radio"].visually-hidden {
 }
 
 .register-link {
-  padding-left: 25px;
-  padding-right: 25px;
   padding-top: 12px;
+  padding-right: 25px;
   padding-bottom: 9px;
+  padding-left: 25px;
 
   font-size: 21px;
   line-height: 21px;
@@ -428,8 +435,8 @@ input[type="radio"].visually-hidden {
 
 .user-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 0;
   padding: 0;
@@ -439,7 +446,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -450,15 +456,14 @@ input[type="radio"].visually-hidden {
 .catalog-navigation-item {
   margin: 0;
   padding: 0;
+
   text-align: center;
 }
 
 .user-second-list {
   display: flex;
-
   margin: 0;
   margin-left: 17px;
-
   padding: 0;
 
   list-style: none;
@@ -466,40 +471,43 @@ input[type="radio"].visually-hidden {
 
 .user-second-item {
   margin: 0;
+
   text-align: center;
   text-decoration: underline;
 }
 
 .user-second-item:first-of-type {
   position: relative;
+
   padding-right: 35px;
 }
 
 .user-second-item:first-of-type::after {
   content: "";
   position: absolute;
-
   top: 7px;
   right: 14px;
 
   width: 4px;
   height: 4px;
-  border-radius: 50%;
+
   background-color: #32425c;
+  border-radius: 50%;
 }
 
 .user-navigation-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .user-navigation-item {
   position: relative;
+
   margin: 0;
 
   text-align: center;
@@ -538,6 +546,7 @@ input[type="radio"].visually-hidden {
 .store-navigation .container {
   display: flex;
   justify-content: space-around;
+  padding: 0;
 
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
@@ -552,7 +561,6 @@ input[type="radio"].visually-hidden {
 .store-navigation-list {
   display: flex;
   justify-content: space-around;
-
   margin: 0;
   padding: 0;
 
@@ -572,11 +580,10 @@ input[type="radio"].visually-hidden {
 
 .store-navigation a {
   display: block;
-
   padding-top: 20px;
+  padding-right: 30px;
   padding-bottom: 21px;
   padding-left: 30px;
-  padding-right: 30px;
 
   color: #ffffff;
 }
@@ -599,7 +606,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   box-sizing: border-box;
   min-width: 135px;
-
+  margin-left: 2px;
   padding: 10px 20px;
 
   font-size: 14px;
@@ -624,14 +631,15 @@ input[type="radio"].visually-hidden {
 
 .advertising-item {
   position: relative;
+
   box-sizing: border-box;
   width: 300px;
   height: 123px;
   margin: 0;
   padding: 0;
-  padding-left: 23px;
   padding-top: 23px;
   padding-bottom: 22px;
+  padding-left: 23px;
 
   background-color: #ffbf47;
 }
@@ -639,8 +647,8 @@ input[type="radio"].visually-hidden {
 .advertising-item::before {
   content: "";
   position: absolute;
-  top: 26px;
-  right: 40px;
+  top: 30px;
+  right: 42px;
 
   width: 44px;
   height: 65px;
@@ -652,8 +660,8 @@ input[type="radio"].visually-hidden {
 .advertising-item:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 26px;
-  right: 40px;
+  top: 35px;
+  right: 30px;
 
   width: 75px;
   height: 61px;
@@ -666,8 +674,8 @@ input[type="radio"].visually-hidden {
 .advertising-item:nth-child(3)::before {
   content: "";
   position: absolute;
-  top: 26px;
-  right: 40px;
+  top: 30px;
+  right: 33px;
 
   width: 78px;
   height: 62px;
@@ -695,7 +703,7 @@ input[type="radio"].visually-hidden {
 
 .advertising-item .advertising-flag {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -0.9px;
   z-index: 20;
 
@@ -712,7 +720,7 @@ input[type="radio"].visually-hidden {
 
 .advertising-title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 
   font-weight: 700;
   font-size: 24px;
@@ -722,8 +730,8 @@ input[type="radio"].visually-hidden {
 
 .advertising-second-list {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   order: 2;
   margin: 0;
   padding: 0;
@@ -733,14 +741,15 @@ input[type="radio"].visually-hidden {
 
 .advertising-second-item {
   position: relative;
+
   box-sizing: border-box;
   width: 300px;
   height: 123px;
   margin: 0;
   padding: 0;
-  padding-left: 23px;
   padding-top: 23px;
   padding-bottom: 22px;
+  padding-left: 23px;
 
   background-color: #ffbf47;
 }
@@ -762,8 +771,8 @@ input[type="radio"].visually-hidden {
 .advertising-second-item:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 26px;
-  right: 40px;
+  top: 31px;
+  right: 31px;
 
   width: 78px;
   height: 63px;
@@ -777,30 +786,59 @@ input[type="radio"].visually-hidden {
   background-color: #8ed78f;
 }
 
+.advertising-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-indicator {
   position: absolute;
   bottom: 36px;
-  left: 31.5%;
+  left: 50%;
 }
 
 .slider-control {
   position: absolute;
   top: 50%;
-  left: 31.5%;
+
+  width: 100%;
+}
+
+.arrows {
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 .prevarrow {
   position: absolute;
-  right: 255px;
+  top: -20px;
+  left: 23px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .nextarrow {
   position: absolute;
-  left: 280px;
+  top: -20px;
+  right: 20px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-slider {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -841,7 +879,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -858,8 +895,10 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
   position: relative;
+
   margin: 0;
   padding: 0;
+
   border: solid 5px #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -874,17 +913,20 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50%;
   left: 50%;
+
   width: 6px;
   height: 6px;
   margin: -3px;
-  border-radius: 50%;
+
   background-color: #ee3643;
+  border-radius: 50%;
 }
 
 .slider-main-button {
   position: absolute;
   bottom: 22px;
   left: 25px;
+
   min-width: 195px;
 }
 
@@ -964,8 +1006,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-list {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -1011,11 +1053,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-products-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-product-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .product-title {
@@ -1159,11 +1201,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-products-item:hover .catalog-popup {
   display: block;
+
   background-color: #ffffff;
 }
 
 .catalog-product-item:hover .catalog-popup {
   display: block;
+
   background-color: #ffffff;
 }
 
@@ -1188,7 +1232,7 @@ input[type="radio"].visually-hidden {
 .catalog-products-item .product-title {
   min-height: 40px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   padding: 0 25px;
 }
 
@@ -1222,6 +1266,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .old-price-no {
@@ -1232,8 +1277,9 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 80px;
-  margin: 10px auto;
+  margin: 8px auto;
   margin-bottom: 20px;
+  margin-left: 41px;
   padding: 10px 30px;
 
   color: #ffffff;
@@ -1261,6 +1307,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .catalog-products-item .current-price:after {
@@ -1324,7 +1371,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-manufacturers {
-  margin-bottom: 85px;
+  margin-bottom: 63px;
 }
 
 .popular-manufacturers-link {
@@ -1373,7 +1420,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
 
@@ -1386,7 +1432,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 220px;
   height: 145px;
-
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -1399,26 +1444,42 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-manufacturers-item:hover {
-  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-manufacturers-item:active {
-  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
 
 .services {
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 
   background-color: #f5f8fa;
 }
 
 .services-toggles-list {
+  position: relative;
+
   margin: 0;
   margin-right: 80px;
   padding: 0;
 
   list-style: none;
+}
+
+.services-toggles-list::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 0;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url(../img/services-shadow.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-list {
@@ -1432,19 +1493,19 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   box-sizing: border-box;
   min-width: 240px;
-  padding: 20px 23px 15px 23px;
+  padding: 20px 23px 10px 23px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-
   vertical-align: middle;
   text-align: left;
   color: #ffffff;
+
   background-color: #32425c;
   border-top: 1px solid #405069;
-  border-bottom: 1px solid #293449;
   border-right: none;
+  border-bottom: 1px solid #293449;
   border-left: none;
   outline: none;
 }
@@ -1454,19 +1515,21 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-button-current {
-  border: none;
   color: #32425c;
+
   background-color: #ffffff;
+  border: none;
 }
 
 .delivery-button-current:hover {
   color: #32425c;
+
   background-color: #ffffff;
 }
 
 .services h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-weight: 400;
   font-size: 30px;
@@ -1492,8 +1555,23 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-text {
+  width: 275px;
   margin: 0;
   padding: 0;
+}
+
+.services-delivery {
+  width: 468px;
+  height: 261px;
+
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  background-position: 99% 96%;
+}
+
+.services-item {
+  width: 620px;
+  height: 286px;
 }
 
 .services-item:nth-child(2) {
@@ -1506,13 +1584,12 @@ input[type="radio"].visually-hidden {
 
 .services-item h3 {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   padding: 0;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-
   color: #32425c;
   text-transform: uppercase;
 }
@@ -1541,15 +1618,14 @@ input[type="radio"].visually-hidden {
 }
 
 .services-wrapper {
-  display: flex;
-  justify-content: space-between;
   position: relative;
-  padding-bottom: 85px;
+
+  display: flex;
 }
 
 .about {
   display: flex;
-  margin-bottom: 86px;
+  margin-bottom: 85px;
 }
 
 .about-column-right {
@@ -1558,7 +1634,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-column-right img {
-  margin-bottom: 52px;
+  margin-bottom: 39px;
 }
 
 .about-column-left {
@@ -1567,19 +1643,19 @@ input[type="radio"].visually-hidden {
 
 .about h2 {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-
   color: #000000;
   text-transform: uppercase;
 }
 
 .about-text {
-  margin-bottom: 27px;
   width: 390px;
+  margin-bottom: 23px;
+
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1601,8 +1677,17 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   padding-left: 35px;
+}
+
+
+.about-item:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.about-item:last-of-type {
+  margin-bottom: 36px;
 }
 
 .about-item-text {
@@ -1610,7 +1695,6 @@ input[type="radio"].visually-hidden {
 
   font-size: 18px;
   line-height: 24px;
-
   color: #000000;
 }
 
@@ -1628,6 +1712,7 @@ input[type="radio"].visually-hidden {
 
 .about-button {
   min-width: 220px;
+  padding: 10px;
 }
 
 .about-button:hover {
@@ -1639,7 +1724,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-text {
-  margin: 0 0 48px;
+  margin: 0 0 30px;
 
   font-size: 13px;
   line-height: 24px;
@@ -1649,6 +1734,8 @@ input[type="radio"].visually-hidden {
 
 .contact-button {
   min-width: 300px;
+  padding: 10px;
+  padding-left: 18px;
 }
 
 .contact-button:hover {
@@ -1723,20 +1810,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 322px;
-  margin-bottom: 51px;
+  margin-bottom: 50px;
 }
 
 .right-footer-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
   width: 550px;
+  margin-left: auto;
 }
 
 .footer-navigation a {
   font-size: 18px;
   line-height: 24px;
-
   color: #f1f5f7;
 }
 
@@ -1758,7 +1844,6 @@ input[type="radio"].visually-hidden {
 .footer-secondary-navigation a {
   font-size: 18px;
   line-height: 24px;
-
   color: #ffd180;
 }
 
@@ -1775,11 +1860,11 @@ input[type="radio"].visually-hidden {
 .footer-secondary-navigation-list {
   display: flex;
   justify-content: flex-end;
-  text-align: right;
   margin: 0;
   padding: 0;
 
   list-style: none;
+  text-align: right;
 }
 
 .footer-secondary-navigation-item:not(:last-of-type) {
@@ -1803,12 +1888,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts p {
-  font-style: normal;
-  font-size: 18px;
-  line-height: 24px;
   margin: 0;
   padding: 0;
 
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
   color: #f3f7f9;
 }
 
@@ -1819,7 +1904,6 @@ input[type="radio"].visually-hidden {
 .footer-contacts a {
   font-size: 18px;
   line-height: 24px;
-
   color: #f3f7f9;
 }
 
@@ -1837,12 +1921,12 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
+  margin: 0;
+  margin-right: 100px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
-  padding: 0;
-  margin-right: 110px;
-
   color: #ffffff;
 }
 
@@ -1878,29 +1962,29 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-email {
-  font-size: 16px;
-  line-height: 18px;
   width: 140px;
   margin: 0;
   padding: 0;
 
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
 }
 
 .contacts-developer {
-  font-size: 16px;
-  line-height: 18px;
   width: 100px;
   margin: 0;
   padding: 0;
+  padding-right: 10px;
 
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
 }
 
 .contacts-link {
   font-size: 16px;
   line-height: 18px;
-
   color: #ffd180;
 }
 .contacts-link:hover {
@@ -1926,8 +2010,8 @@ input[type="radio"].visually-hidden {
 
 .contact-form {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @keyframes bounce {
@@ -1974,7 +2058,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 10;
+  z-index: 30;
 
   width: 620px;
   margin-top: -150px;
@@ -1982,6 +2066,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px rgba(0, 1, 1, 0.75);
+  visibility: hidden;
 }
 
 .modal-close {
@@ -2007,9 +2092,11 @@ input[type="radio"].visually-hidden {
   left: -1px;
 
   width: 25px;
-  height: 3px;
+  height: 4px;
 
   background-color: #ee3643;
+  border: none;
+  outline: none;
 }
 
 .modal-close::before {
@@ -2032,6 +2119,7 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
+
   animation: bounce 0.6s;
 }
 
@@ -2126,11 +2214,12 @@ input[type="radio"].visually-hidden {
 }
 
 .send-button-wrapper {
-  background-color: #f4f4f4;
   padding-top: 36px;
+  padding-right: 80px;
   padding-bottom: 36px;
   padding-left: 80px;
-  padding-right: 80px;
+
+  background-color: #f4f4f4;
 }
 
 .send-button {
@@ -2138,7 +2227,6 @@ input[type="radio"].visually-hidden {
 
   font-size: 14px;
   line-height: 18px;
-
   color: #ffffff;
 }
 
@@ -2155,24 +2243,121 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-cart-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+
   display: none;
+  width: 620px;
+  margin-top: -150px;
+  margin-left: -280px;
+
+  background-color: #ffffff;
+  box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.modal-cart-text {
+  position: relative;
+
+  margin: 0;
+  margin-top: 68px;
+  margin-bottom: 68px;
+  padding: 0;
+  padding-right: 125px;
+  padding-left: 179px;
+
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart-text::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 80px;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/icon-mark.svg");
+}
+
+.modal-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 37px;
+  padding-right: 80px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+
+  background-color: #f1f1f1;
+}
+
+.modal-cart-ordering {
+  width: 220px;
+}
+
+.modal-cart-ordering:hover {
+  width: 220px;
+
+  background-color: #ca2c37;
+}
+
+.modal-cart-ordering:active {
+  width: 220px;
+
+  background-color: #ba2732;
+}
+
+.modal-cart-continue {
+  width: 220px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal-cart-close {
+  right: 10px;
 }
 
 .modal-map-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+
   display: none;
+  width: 940px;
+  height: 446px;
+  margin-top: -150px;
+  margin-left: -470px;
+
+  box-shadow: 0 0 20px rgba(0, 1, 1, 0.75);
+}
+
+.modal-map-close {
+  top: 7px;
+  right: 7px;
 }
 
 .catalog-name {
-  display: block;
   position: relative;
+
+  display: block;
   padding-top: 14px;
+  padding-right: 8px;
   padding-bottom: 10px;
   padding-left: 47px;
-  padding-right: 8px;
+
   font-size: 21px;
   line-height: 21px;
-
   color: #000000;
+
   background-color: #ffffff;
 }
 
@@ -2186,13 +2371,13 @@ input[type="radio"].visually-hidden {
 }
 
 .myaccount-logout {
-  display: block;
   position: relative;
 
-  padding-left: 30px;
-  padding-right: 30px;
+  display: block;
   padding-top: 22.5px;
+  padding-right: 30px;
   padding-bottom: 22.5px;
+  padding-left: 30px;
 
   background-color: #ffffff;
 }
@@ -2201,13 +2386,15 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50%;
   right: 3px;
-  transform: translate(-50%, -50%);
+
   width: 20px;
   height: 17px;
+
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .myaccount-logout:hover svg path {
@@ -2237,7 +2424,6 @@ input[type="radio"].visually-hidden {
 .catalog-orders {
   font-size: 16px;
   line-height: 18px;
-
   color: #32425c;
 }
 
@@ -2289,17 +2475,19 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-item::before {
   content: "";
   position: absolute;
-  display: inline-block;
-  border: 1px solid #c5c9d1;
-  border-width: 0 1px 1px 0;
-  transform: rotate(-45deg);
-  padding: 4px;
   top: 5px;
   left: -30px;
+
+  display: inline-block;
+  padding: 4px;
+
+  border: 1px solid #c5c9d1;
+  border-width: 0 1px 1px 0;
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .catalog-title {
@@ -2310,7 +2498,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-
   color: #32425c;
   text-transform: uppercase;
 
@@ -2358,6 +2545,7 @@ input[type="radio"].visually-hidden {
 .filter .filter-price {
   margin-bottom: 22px;
   padding-bottom: 23px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -2483,6 +2671,7 @@ input[type="radio"].visually-hidden {
 
 .filter .filter-manufacturers {
   margin-bottom: 21px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -2616,8 +2805,8 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .sort-list {
@@ -2640,7 +2829,6 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   color: rgba(000, 000, 000, 0.3);
-
   text-transform: uppercase;
 }
 
@@ -2656,6 +2844,7 @@ input[type="radio"].visually-hidden {
 .sort-item .sort-link:active,
 .sort-item .sort-link:focus {
   color: #ee3643;
+
   border: none;
 }
 
@@ -2668,6 +2857,7 @@ input[type="radio"].visually-hidden {
 .sort-link:hover,
 .sort-link:focus {
   color: #000000;
+
   border-bottom: 1px solid #ee3643;
 }
 
@@ -2726,9 +2916,9 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin: 0 0 21px;
   padding-top: 12px;
+  padding-right: 17px;
   padding-bottom: 13px;
   padding-left: 19px;
-  padding-right: 17px;
 
   background-color: #f7f3ec;
 }
@@ -2767,6 +2957,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -2783,6 +2974,7 @@ input[type="radio"].visually-hidden {
 .pagination-link[href]:active,
 .pagination-link[href]:focus {
   color: #ffffff;
+
   background-color: #ee3643;
   border: none;
   cursor: default;
@@ -2794,9 +2986,10 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-link[href]:active {
-  border: solid 1px #ee3643;
-  background-color: #ffffff;
   color: #000000;
+
+  background-color: #ffffff;
+  border: solid 1px #ee3643;
 }
 
 .product-description {
@@ -2804,14 +2997,14 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description h2 {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
   margin: 0;
   padding: 0;
   padding-top: 64px;
   padding-bottom: 29px;
 
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -2820,6 +3013,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 68px;
+
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
