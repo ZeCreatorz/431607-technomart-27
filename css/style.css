@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -34,6 +32,15 @@
 
   src: local("Ptsans"), url("../fonts/ptsansbold.woff2") format("woff2"),
     url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "cuprumitalic";
+
+  src: local("cuprumitalic"), url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 body {
@@ -86,8 +93,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  margin-bottom: 59px;
-
   background-color: #f4f7f9;
 }
 
@@ -129,7 +134,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link-wrapper .catalog-basket {
-  padding: 12px 25px 12px 48px;
+  padding: 12px 25px 12px 50px;
 }
 
 .link-wrapper .header-submit-order {
@@ -282,6 +287,8 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+
+  opacity: 1;
 }
 
 .search-field:-ms-input-placeholder {
@@ -300,6 +307,8 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+
+  opacity: 1;
 }
 
 .search-field:hover {
@@ -342,7 +351,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
   align-items: flex-start;
   margin-bottom: 40px;
@@ -357,31 +365,32 @@ input[type="radio"].visually-hidden {
   margin-left: 53px;
   padding-top: 3px;
 
-  font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
+  font-family: "cuprumitalic", Arial, sans-serif;
   text-align: left;
   color: #ee3643;
 }
 
 .address-info {
   width: 270px;
+  margin-left: 69px;
 }
 
 .contacts-tel {
   position: relative;
 
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 21px;
-  text-align: center;
 
   font-style: normal;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   color: #ee3643;
 
   border: 3px solid #ffffff;
@@ -478,6 +487,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: start;
   align-items: flex-start;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -489,7 +499,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   align-items: center;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding: 0;
 
   list-style: none;
@@ -522,7 +532,7 @@ input[type="radio"].visually-hidden {
 .user-second-item:first-of-type {
   position: relative;
 
-  padding-right: 35px;
+  padding-right: 32px;
 }
 
 .user-second-item:first-of-type::after {
@@ -546,6 +556,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   align-items: center;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   list-style: none;
@@ -638,6 +649,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advertising {
+  margin-top: 59px;
   margin-bottom: 53px;
 }
 
@@ -683,6 +695,7 @@ input[type="radio"].visually-hidden {
 
 .advertising-item {
   position: relative;
+
   box-sizing: border-box;
   width: 300px;
   height: 123px;
@@ -797,6 +810,7 @@ input[type="radio"].visually-hidden {
 
 .advertising-second-item {
   position: relative;
+
   box-sizing: border-box;
   width: 300px;
   height: 123px;
@@ -933,8 +947,8 @@ input[type="radio"].visually-hidden {
 
 .slider-title {
   margin: 0 auto;
-  margin-left: 24px;
   margin-bottom: 2px;
+  margin-left: 24px;
   padding: 25px 0 0;
 
   font-weight: 700;
@@ -987,10 +1001,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 19px;
   left: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   min-width: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .slider-main-button:hover {
@@ -1091,6 +1105,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: start;
   justify-content: flex-start;
   margin: 0;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -1109,6 +1124,18 @@ input[type="radio"].visually-hidden {
 
 .catalog-product-item:nth-child(3n + 3) {
   margin-right: 0;
+}
+
+.catalog-product-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.catalog-product-item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.catalog-product-item:nth-last-child(3) {
+  margin-bottom: 0;
 }
 
 .catalog-product-item {
@@ -1311,7 +1338,7 @@ input[type="radio"].visually-hidden {
 .catalog-product-item .product-title {
   min-height: 40px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0 25px;
 }
 
@@ -1366,6 +1393,7 @@ input[type="radio"].visually-hidden {
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
+  margin-left: 42px;
   padding: 10px 30px;
 
   color: #ffffff;
@@ -1399,7 +1427,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -23px;
 
   width: 0;
   height: 0;
@@ -1630,18 +1658,18 @@ input[type="radio"].visually-hidden {
 }
 
 .services-text {
+  width: 399px;
   margin: 0;
   margin-bottom: 66px;
   padding: 0;
-  width: 398px;
 }
 
 .credit-text {
+  width: 279px;
   margin-top: 0;
   margin-right: 0;
-  margin-left: 0;
   margin-bottom: 28px;
-  width: 279px;
+  margin-left: 0;
 }
 
 .delivery-text {
@@ -1695,6 +1723,7 @@ input[type="radio"].visually-hidden {
 
 .services-credit {
   display: none;
+
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: 99% 96%;
@@ -1770,9 +1799,9 @@ input[type="radio"].visually-hidden {
 .about-list {
   margin: 0;
   padding: 0;
-  vertical-align: middle;
 
   list-style: none;
+  vertical-align: middle;
 }
 
 .about-item {
@@ -1885,8 +1914,8 @@ input[type="radio"].visually-hidden {
   align-items: flex-end;
   margin: 0;
   padding: 0;
-  padding-top: 38px;
-  padding-bottom: 35px;
+  padding-top: 37px;
+  padding-bottom: 34px;
 
   list-style: none;
 }
@@ -1929,7 +1958,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 
 .right-footer-wrapper {
@@ -1997,6 +2026,8 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
   width: 323px;
+  margin-left: 5px;
+
   font-style: normal;
 }
 
@@ -2055,9 +2086,11 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
-  width: 231px;
+  width: 233px;
   margin: 0;
+  margin-top: 5px;
   margin-right: 100px;
+  margin-left: 2px;
   padding: 0;
 
   font-size: 16px;
@@ -2539,6 +2572,7 @@ input[type="radio"].visually-hidden {
   height: 446px;
   margin-top: -150px;
   margin-left: -470px;
+
   box-shadow: 0 0 20px rgba(0, 1, 1, 0.75);
 }
 
@@ -2551,10 +2585,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: block;
-  padding-top: 14px;
-  padding-right: 8px;
-  padding-bottom: 10px;
-  padding-left: 47px;
+  padding-top: 11px;
+  padding-right: 7px;
+  padding-bottom: 13px;
+  padding-left: 46px;
 
   font-size: 21px;
   line-height: 21px;
@@ -2587,7 +2621,7 @@ input[type="radio"].visually-hidden {
 .myaccount-logout svg {
   position: absolute;
   top: 50%;
-  right: 3px;
+  right: 0;
 
   width: 20px;
   height: 17px;
@@ -2655,6 +2689,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 355px;
   margin: 0;
+  margin-top: 22px;
   margin-bottom: 23px;
   padding: 0;
 
@@ -2716,8 +2751,10 @@ input[type="radio"].visually-hidden {
 
 .filters h2 {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   padding: 12px 19px;
+  padding-top: 13px;
+  padding-bottom: 7px;
 
   font-weight: 400;
   font-size: 13px;
@@ -2730,7 +2767,7 @@ input[type="radio"].visually-hidden {
 }
 
 .legend-price {
-  margin-bottom: 19px;
+  margin-bottom: 14px;
 
   font-weight: 700;
   font-size: 17px;
@@ -2741,8 +2778,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .filter-price {
-  margin-bottom: 22px;
-  padding-bottom: 23px;
+  margin-bottom: 16px;
+  padding-bottom: 28px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2756,7 +2793,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 38px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -2820,6 +2857,8 @@ input[type="radio"].visually-hidden {
 .price-controls input {
   width: 60px;
   padding: 8px 10px;
+  padding-right: 15px;
+  padding-left: 20px;
 
   font-size: 17px;
   line-height: 18px;
@@ -2831,16 +2870,32 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+.min-price {
+  position: relative;
+}
+
+.min-price::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -6px;
+
+  width: 10px;
+  height: 1px;
+
+  background-color: #444444;
+}
+
 .max-price {
   text-align: right;
 }
 
 .legend-checkbox {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .legend-power {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 }
 
 .filter-list {
@@ -2866,13 +2921,13 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .filter-manufacturers {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
 .filter .filter-power {
-  margin-bottom: 75px;
+  margin-bottom: 58px;
 }
 
 .filter ul {
@@ -2881,7 +2936,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item-option {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   padding-left: 36px;
 
   font-size: 15px;
@@ -2969,6 +3024,8 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   min-width: 140px;
+  padding-top: 11px;
+  padding-bottom: 7px;
 
   font-size: 13px;
   line-height: 18px;
@@ -3021,21 +3078,22 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-link {
-  margin-right: 71px;
+  margin-right: 69px;
 
   font-size: 13px;
   line-height: 18px;
   color: rgba(000, 000, 000, 0.3);
   text-transform: uppercase;
-}
 
-.sort-link {
   border-bottom: 1px solid #ee3643;
   border-bottom-style: dotted;
 }
 
 .sort-item .current {
+  color: #ee3643;
+
   border-bottom: none;
+  cursor: default;
 }
 
 .sort-item .sort-link:active,
@@ -3045,10 +3103,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.sort-item .current {
-  color: #ee3643;
-
-  cursor: default;
+.sort-item:last-child .sort-link {
+  margin-right: 25px;
 }
 
 .sort-link:hover,
@@ -3117,7 +3173,7 @@ input[type="radio"].visually-hidden {
   margin: 0 0 21px;
   padding-top: 12px;
   padding-right: 17px;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   padding-left: 19px;
 
   background-color: #f7f3ec;
@@ -3129,6 +3185,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0;
 }
@@ -3144,6 +3201,8 @@ input[type="radio"].visually-hidden {
 .pagination-link {
   min-width: 38px;
   margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 13px;
   line-height: 18px;
@@ -3154,6 +3213,16 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+}
+
+.pagination-item:nth-child(2) .pagination-link {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.pagination-item:nth-child(3) .pagination-link {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .pagination-list {
@@ -3203,8 +3272,8 @@ input[type="radio"].visually-hidden {
 .product-description h2 {
   margin: 0;
   padding: 0;
-  padding-top: 64px;
-  padding-bottom: 29px;
+  padding-top: 63px;
+  padding-bottom: 27px;
 
   font-weight: 400;
   font-size: 30px;
@@ -3216,7 +3285,7 @@ input[type="radio"].visually-hidden {
 .product-description p {
   margin: 0;
   padding: 0;
-  padding-bottom: 68px;
+  padding-bottom: 67px;
 
   font-size: 13px;
   line-height: 24px;
