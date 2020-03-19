@@ -1637,7 +1637,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   box-sizing: border-box;
   min-width: 240px;
-  padding: 17px 23px 15px 23px;
+  padding: 16px 23px 15px 23px;
 
   font-weight: 700;
   font-size: 21px;
@@ -2328,10 +2328,11 @@ input[type="radio"].visually-hidden {
 
   width: 620px;
   margin-top: -150px;
-  margin-left: -280px;
 
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px rgba(0, 1, 1, 0.75);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   visibility: hidden;
 }
 
@@ -2521,10 +2522,11 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 620px;
   margin-top: -150px;
-  margin-left: -280px;
 
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .modal-cart-text {
@@ -2607,9 +2609,10 @@ input[type="radio"].visually-hidden {
   width: 940px;
   height: 446px;
   margin-top: -150px;
-  margin-left: -470px;
 
   box-shadow: 0 0 20px rgba(0, 1, 1, 0.75);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .modal-map-close {
@@ -3221,7 +3224,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0;
 }
@@ -3230,6 +3232,8 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   min-width: 140px;
   margin-right: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   vertical-align: middle;
 }
