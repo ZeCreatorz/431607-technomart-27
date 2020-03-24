@@ -374,10 +374,11 @@ input[type="radio"].visually-hidden {
   margin-left: 53px;
   padding-top: 3px;
 
+  font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  font-family: "cuprumitalic", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: left;
   color: #ee3643;
 }
@@ -1159,7 +1160,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .product-title-link {
@@ -1414,7 +1415,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1456,7 +1457,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1706,7 +1707,7 @@ input[type="radio"].visually-hidden {
 .services p {
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1842,7 +1843,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -1917,7 +1918,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
