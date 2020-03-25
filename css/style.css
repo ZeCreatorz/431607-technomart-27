@@ -4,8 +4,8 @@
   font-family: "Cuprum";
 
   src: local("Cuprum"), local("Cuprum-Regular"),
-  url("../fonts/cuprum.woff2") format("woff2"),
-  url("../fonts/cuprum.woff") format("woff");
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-family: "Cuprum";
 
   src: local("Cuprum Bold"), local("Cuprum-Bold"),
-  url("../fonts/cuprumbold.woff2") format("woff2"),
-  url("../fonts/cuprumbold.woff") format("woff");
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-family: "Cuprum";
 
   src: local("Cuprum Italic"), local("Cuprum-Italic"),
-  url("../fonts/cuprumitalic.woff2") format("woff2"),
-  url("../fonts/cuprumitalic.woff") format("woff");
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-family: "PT sans";
 
   src: local("PT Sans"), local("PTSans-Regular"),
-  url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsans.woff") format("woff");
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -44,8 +44,8 @@
   font-family: "PT sans";
 
   src: local("PT Sans Bold"), local("PTSans-Bold"),
-  url("../fonts/ptsansbold.woff2") format("woff2"),
-  url("../fonts/ptsansbold.woff") format("woff");
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -88,7 +88,7 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .container {
@@ -2259,50 +2259,24 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px rgba(0, 1, 1, 0.75);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  transform: translateX(-50%);
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 
   70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
 
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -2310,7 +2284,7 @@ input[type="radio"].visually-hidden {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -2319,7 +2293,10 @@ input[type="radio"].visually-hidden {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
   }
 
   20%,
@@ -2327,7 +2304,7 @@ input[type="radio"].visually-hidden {
   60%,
   80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -2335,7 +2312,7 @@ input[type="radio"].visually-hidden {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -2344,7 +2321,7 @@ input[type="radio"].visually-hidden {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   20%,
@@ -2352,7 +2329,7 @@ input[type="radio"].visually-hidden {
   60%,
   80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -2388,12 +2365,12 @@ input[type="radio"].visually-hidden {
 
 .modal-close::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-close::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .modal-close:hover::before,
@@ -2410,12 +2387,12 @@ input[type="radio"].visually-hidden {
   display: block;
 
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .contact-form input[type="text"],
@@ -2546,7 +2523,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 #ee3643, 0 20px 40px 0 rgba(41, 52, 73, 0.75);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .modal-cart-text {
@@ -2632,7 +2609,7 @@ input[type="radio"].visually-hidden {
 
   box-shadow: 0 0 20px rgba(0, 1, 1, 0.75);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .modal-map-close {
@@ -2686,7 +2663,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
 
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .myaccount-logout:hover svg path {
@@ -2785,7 +2762,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #c5c9d1;
   border-width: 0 1px 1px 0;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .catalog-title {
